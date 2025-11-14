@@ -7,9 +7,21 @@
     */
 
     //ENTRADA
+    const quantidadeNotas= Number(prompt(`insira quantas notas o aluno teve`));
+    let media= 0;
+    let soma= 0;
+
     
 
     //PROCESSAMENTO
+    for(let i= 1; i<=quantidadeNotas; i++) {
+        const notas= Number(prompt(`qual a nota do aluno`));
+        soma+= notas;
+        media= soma/quantidadeNotas;
+        
+    }
+    alert(media.toFixed(2));
+
     
 
     //SAÍDA
