@@ -5,6 +5,15 @@
     */
 
     //ENTRADA
+    let acrescimo= 2/100;
+    let investimento= 1000;
+    let dias= 0;
+    for(; investimento<2000; dias++ ) {
+        dias+= dias;
+        investimento+= investimento*acrescimo;
+    }
+    alert(investimento.toFixed(2));
+
 
 
     //PROCESSAMENTO
