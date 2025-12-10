@@ -6,6 +6,34 @@
     */
 
     //ENTRADA
+    const numero1= Number(prompt(`insira o numero inicial`));
+    const numero2=  Number(prompt(`insira o numero final`));
+    let  pares= "";
+    let impares= "";
+    if(numero1<numero2) {
+        for(let i= numero1; i<numero2; i++ ){
+            if(i%2==0) {
+                pares+= i+" ";
+            }
+            if(i%2!==0){
+                impares+=i+" ";
+
+            }
+        }
+        document.write(`os numeros pares que estão entre ${numero1} e ${numero2} são: ${pares}`);
+    document.write(`os numeros impares que estão entre ${numero1} e ${numero2} são: ${impares}`);
+    }
+    
+    else{
+        document.write(`o primeiro numero deve ser menor que o segundo`);
+
+    }
+    
+
+
+    
+
+
     
 
     
