@@ -10,11 +10,23 @@
     */
 
     //ENTRADA
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    
+    //PROCESSAMENTO
+    let letrasUnicas = [];
+    for (let i = 0; i < listaDeLetras.length; i = i + 1) {
+        let letra = listaDeLetras[i].toLowerCase();
+        let posicao = letrasUnicas.indexOf(letra);
+        if (posicao == -1) {
+            letrasUnicas.push(letra);
+        }
+    }
 
     
     //PROCESSAMENTO
 
     
     //SAÍDA
+    document.write(`As letras da lista, sem repetir, são: ${letrasUnicas.sort().join(", ")}`);
 
 </script>
